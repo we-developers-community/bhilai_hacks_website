@@ -1295,7 +1295,7 @@ h6 {
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -1501,7 +1501,7 @@ h6 {
 --------------------------------------------------------------*/
 #footer {
   background: #101522;
-  padding: 0 0 25px 0;
+  padding: 0 0 20px 0;
   color: #eee;
   font-size: 14px;
 }
@@ -1641,7 +1641,7 @@ h6 {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #footer .credits {
@@ -1649,3 +1649,13 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+
+.fa-ul {
+  padding: 0;
+}
+
+.fa-ul > li {
+  list-style: none;
+  text-align: center;
+}
+
