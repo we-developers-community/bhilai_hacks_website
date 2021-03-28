@@ -1295,7 +1295,7 @@ h6 {
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -1649,3 +1649,13 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+
+.fa-ul {
+  padding: 0;
+}
+
+.fa-ul > li {
+  list-style: none;
+  text-align: center;
+}
+
