@@ -36,6 +36,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Flipdown Timer CSS File -->
+    <link rel="stylesheet" href="./assets/css/flipdown.css">
   </head>
 
   <body>
@@ -49,8 +51,12 @@
             <!-- <img src="assets/img/logo.png" alt="" title=""
           /> -->
 
-            <img
+            <!-- <img
               src="https://cdn.discordapp.com/attachments/825453161878650951/826905296646963290/Component_7__2.png"
+              alt="logo"
+            /> -->
+            <img
+              src="https://cdn.discordapp.com/attachments/825453161878650951/827180463100919838/bh_logo_regular.png"
               alt="logo"
             />
           </a>
@@ -117,6 +123,31 @@
             </div>
           </div>
         </div>
+        <!-- <div class="example"> -->
+          <div id="flipdown" class="flipdown"></div>
+          <!-- </div> -->
+        <script src="./assets/js/flipdown.js"></script>
+        <Script>
+          document.addEventListener('DOMContentLoaded', () => {
+            // Unix timestamp (in seconds) to count down to
+            // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));    
+            var endDate = 1619202600;//Unix timestamp for 2021-04-24T00:00:00+05:30
+            console.log(endDate)
+            // Set up FlipDown
+            var flipdown = new FlipDown(endDate)
+              // Start the countdown
+              .start()
+              // Do something when the countdown ends
+              .ifEnded(() => {
+                //Write Celebration animation code
+                console.log('The countdown has ended!');
+              });
+    
+            var ver = document.getElementById('ver');
+            ver.innerHTML = flipdown.version;
+          });
+    
+        </Script>
       </section>
       <!-- End About Section -->
 
