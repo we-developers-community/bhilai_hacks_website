@@ -37,7 +37,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Flipdown Timer CSS File -->
-    <link rel="stylesheet" href="./assets/css/flipdown.css">
+    <link rel="stylesheet" href="./assets/css/flipdown.css" />
   </head>
 
   <body>
@@ -57,7 +57,7 @@
             /> -->
             <img
               src="https://cdn.discordapp.com/attachments/825453161878650951/827180463100919838/bh_logo_regular.png"
-              alt="logo"
+              alt="Bhilai Hacks logo"
             />
           </a>
         </div>
@@ -124,15 +124,15 @@
           </div>
         </div>
         <!-- <div class="example"> -->
-          <div id="flipdown" class="flipdown"></div>
-          <!-- </div> -->
+        <div id="flipdown" class="flipdown"></div>
+        <!-- </div> -->
         <script src="./assets/js/flipdown.js"></script>
-        <Script>
-          document.addEventListener('DOMContentLoaded', () => {
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
             // Unix timestamp (in seconds) to count down to
-            // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));    
-            var endDate = 1619202600;//Unix timestamp for 2021-04-24T00:00:00+05:30
-            console.log(endDate)
+            // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
+            var endDate = 1619202600; //Unix timestamp for 2021-04-24T00:00:00+05:30
+            console.log(endDate);
             // Set up FlipDown
             var flipdown = new FlipDown(endDate)
               // Start the countdown
@@ -140,14 +140,13 @@
               // Do something when the countdown ends
               .ifEnded(() => {
                 //Write Celebration animation code
-                console.log('The countdown has ended!');
+                console.log("The countdown has ended!");
               });
-    
-            var ver = document.getElementById('ver');
+
+            var ver = document.getElementById("ver");
             ver.innerHTML = flipdown.version;
           });
-    
-        </Script>
+        </script>
       </section>
       <!-- End About Section -->
 
@@ -493,9 +492,7 @@
                   <div class="speaker">
                     <img src="assets/img/speakers/6.jpg" alt="Willow Trantow" />
                   </div>
-                  <h4>
-                   Hackathon End <span>Willow Trantow</span>
-                  </h4>
+                  <h4>Hackathon End <span>Willow Trantow</span></h4>
                   <p>
                     Voluptatem et alias dolorum est aut sit enim neque
                     veritatis.
@@ -1214,16 +1211,17 @@
                     class="collapsed question"
                     href="#faq1"
                   >
-                    Non consectetur a erat nam at lectus urna duis?
+                    What if I’ve never been to a hackathon before?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                      id volutpat lacus laoreet non curabitur gravida. Venenatis
-                      lectus magna fringilla urna porttitor rhoncus dolor purus
-                      non.
+                      Perfect! We welcome hackers of all experience levels and
+                      backgrounds. We will be providing resources and workshops
+                      to help new hackers get started on projects and learn new
+                      technologies. There will also be mentors at the event to
+                      help guide you.
                     </p>
                   </div>
                 </li>
@@ -1234,18 +1232,14 @@
                     href="#faq2"
                     class="collapsed question"
                   >
-                    Feugiat scelerisque varius morbi enim nunc faucibus a
-                    pellentesque? <i class="bi bi-chevron-down icon-show"></i
+                    Can I come with a project pre-built or will I have to build
+                    from scratch?<i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
+                      You will be building your project from scratch. However,
+                      feel free to come with ideas of what you want to build!
                     </p>
                   </div>
                 </li>
@@ -1256,19 +1250,13 @@
                     href="#faq3"
                     class="collapsed question"
                   >
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi? <i class="bi bi-chevron-down icon-show"></i
+                    How many people can be on a team?<i
+                      class="bi bi-chevron-down icon-show"
+                    ></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                      sagittis orci. Faucibus pulvinar elementum integer enim.
-                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                      tellus pellentesque eu tincidunt. Lectus urna duis
-                      convallis convallis tellus. Urna molestie at elementum eu
-                      facilisis sed odio morbi quis
-                    </p>
+                    <p>Up to 4 hackers can be on a team.</p>
                   </div>
                 </li>
 
@@ -1278,18 +1266,14 @@
                     href="#faq4"
                     class="collapsed question"
                   >
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    What do I need?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq4" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
+                      An open mind, laptop, charger, and anything else you would
+                      need to hack!
                     </p>
                   </div>
                 </li>
@@ -1300,17 +1284,15 @@
                     href="#faq5"
                     class="collapsed question"
                   >
-                    Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat? <i class="bi bi-chevron-down icon-show"></i
+                    Does this event cost money to attend?
+                    <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Molestie a iaculis at erat pellentesque adipiscing
-                      commodo. Dignissim suspendisse in est ante in. Nunc vel
-                      risus commodo viverra maecenas accumsan. Sit amet nisl
-                      suscipit adipiscing bibendum est. Purus gravida quis
-                      blandit turpis cursus in
+                      No, admission to the event is free! We will also be
+                      providing workshops and activities throughout the weekend,
+                      as well as virtual swag!
                     </p>
                   </div>
                 </li>
@@ -1321,20 +1303,16 @@
                     href="#faq6"
                     class="collapsed question"
                   >
-                    Tortor vitae purus faucibus ornare. Varius vel pharetra vel
-                    turpis nunc eget lorem dolor?
+                    Who can participate?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq6" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Laoreet sit amet cursus sit amet dictum sit amet justo.
-                      Mauris vitae ultricies leo integer malesuada nunc vel.
-                      Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                      eget lorem dolor sed. Ut venenatis tellus in metus
-                      vulputate eu scelerisque. Pellentesque diam volutpat
-                      commodo sed egestas egestas fringilla phasellus faucibus.
-                      Nibh tellus molestie nunc non blandit massa enim nec.
+                      We hope this event inspires and highlights high school,
+                      undergraduate, and graduate students identifying as women
+                      or allies to hack. There are also opportunities to
+                      participate as mentors and volunteers to support!
                     </p>
                   </div>
                 </li>
@@ -1638,8 +1616,8 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 footer-info mx-auto">
               <img
-                src="https://cdn.discordapp.com/attachments/825453161878650951/826905296646963290/Component_7__2.png"
-                alt="TheEvenet"
+                src="https://cdn.discordapp.com/attachments/825453161878650951/827180463100919838/bh_logo_regular.png"
+                alt="Bhilai Hacks"
               />
               <p>
                 BhilaiHacks is a 24-hour fully-online, a people-focussed
@@ -1722,7 +1700,7 @@
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
-    ><i class="bi bi-arrow-up-short"></i
+      ><i class="bi bi-arrow-up-short"></i
     ></a>
 
     <!-- Vendor JS Files -->
