@@ -7,6 +7,7 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  user-select: none;
 }
 
 a {
@@ -1662,3 +1663,7 @@ h6 {
   text-align: center;
 }
 
+#flipdown {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
