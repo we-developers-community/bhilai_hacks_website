@@ -1002,54 +1002,55 @@ h6 {
 /*--------------------------------------------------------------
 # Hotels Section
 --------------------------------------------------------------*/
-#hotels {
+.hotels {
   padding: 60px 0;
 }
 
-#hotels .hotel {
+.hotels .hotel {
   border: 1px solid #e0e5fa;
   background: #fff;
   margin-bottom: 30px;
 }
 
-#hotels .hotel:hover .hotel-img img {
+.hotels .hotel:hover .hotel-img img {
   transform: scale(1.1);
 }
 
-#hotels .hotel-img {
+.hotels .hotel-img {
   overflow: hidden;
   margin-bottom: 15px;
 }
 
-#hotels .hotel-img img {
+.hotels .hotel-img img {
   transition: 0.3s ease-in-out;
+  height: 250px;
 }
 
-#hotels h3 {
+.hotels h3 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 5px;
   padding: 0 20px;
 }
 
-#hotels a {
+.hotels a {
   color: #1a2c1e;
 }
 
-#hotels a:hover {
+.hotels a:hover {
   color: #3AC76E;
 }
 
-#hotels .stars {
+.hotels .stars {
   padding: 0 20px;
   margin-bottom: 5px;
 }
 
-#hotels .stars i {
+.hotels .stars i {
   color: #ffc31d;
 }
 
-#hotels p {
+.hotels p {
   padding: 0 20px;
   margin-bottom: 20px;
   color: #060c22;
@@ -1378,7 +1379,7 @@ h6 {
 }
 
 #contact .contact-info a {
-  color: #4869df;
+  color: #2b7e49;
 }
 
 #contact .contact-info a:hover {
