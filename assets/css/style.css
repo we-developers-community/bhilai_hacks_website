@@ -1506,14 +1506,14 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: #1d1d1d;
   padding: 0 0 20px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: #2d2d2d;
   padding: 60px 0 30px 0;
 }
 
@@ -1546,7 +1546,7 @@ h6 {
 
 #footer .footer-top .social-links a {
   display: inline-block;
-  background: #222636;
+  background: #1d1d1d;
   color: #eee;
   line-height: 1;
   margin-right: 4px;
