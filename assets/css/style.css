@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -11,7 +9,7 @@ body {
 }
 
 a {
-  color: #3AC76E;
+  color: #3ac76e;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -82,7 +80,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #13810C;
+  background: #13810c;
   color: #fff;
 }
 
@@ -105,7 +103,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #3AC76E;
+  background: #3ac76e;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -161,7 +159,7 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 #header #logo h1 a,
@@ -186,11 +184,11 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #3AC76E;
+  background: #3ac76e;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #3AC76E;
+  border: 2px solid #3ac76e;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -267,7 +265,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #3AC76E;
+  background-color: #3ac76e;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -318,7 +316,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 .navbar .dropdown:hover > ul {
@@ -420,7 +418,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 .navbar-mobile .getstarted {
@@ -454,7 +452,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -467,7 +465,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(https://cdn.discordapp.com/attachments/825453161878650951/826892252294152222/Forest-bro.png) top center;
+  background: url(https://cdn.discordapp.com/attachments/825453161878650951/826892252294152222/Forest-bro.png)
+    top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -500,7 +499,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 @media (max-width: 991px) {
@@ -512,37 +511,41 @@ h6 {
 #hero h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
+  text-shadow: 7px 5px 4px rgb(36 36 36);
 }
 
 #hero h1 span {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 34px;
+    font-size: 45px;
   }
 }
 
 #hero p {
-  color: #ebebeb;
-  font-weight: 700;
+  color: #cbfbcb;
+  /* font-weight: 600; */
   font-size: 20px;
+  text-shadow: 5px 3px 4px rgb(36 36 36);
+  /* margin-bottom: 70px; */
 }
 
 @media (max-width: 991px) {
   #hero p {
     font-size: 16px;
+    margin-bottom: 60px!important;
   }
 }
 
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#3AC76E 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#3ac76e 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -588,7 +591,7 @@ h6 {
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #3AC76E;
+  border-left: 15px solid #3ac76e;
   transform: scale(20);
 }
 
@@ -624,11 +627,11 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #3AC76E;
+  border: 2px solid #3ac76e;
 }
 
 #hero .about-btn:hover {
-  background: #3AC76E;
+  background: #3ac76e;
   color: #fff;
 }
 
@@ -757,7 +760,7 @@ h6 {
 }
 
 .speakers .speaker .details a:hover {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 .speakers .speaker:hover .details {
@@ -794,7 +797,7 @@ h6 {
 }
 
 #speakers-details .details .social a:hover {
-  background: #3AC76E;
+  background: #3ac76e;
   color: #fff;
 }
 
@@ -857,7 +860,7 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #3AC76E;
+  background-color: #3ac76e;
   color: #fff;
 }
 
@@ -1038,7 +1041,7 @@ h6 {
 }
 
 .hotels a:hover {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 .hotels .stars {
@@ -1076,11 +1079,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3AC76E;
+  border: 1px solid #3ac76e;
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3AC76E;
+  background-color: #3ac76e;
 }
 
 #gallery .swiper-slide-active {
@@ -1092,7 +1095,7 @@ h6 {
     padding: 40px 0;
   }
   #gallery .swiper-slide-active {
-    border: 5px solid #3AC76E;
+    border: 5px solid #3ac76e;
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1157,13 +1160,13 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #3AC76E;
+  font-family: #3ac76e;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #13810C;
+  color: #13810c;
   transition: 0.3s;
 }
 
@@ -1188,7 +1191,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed:hover {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1254,7 +1257,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #3AC76E;
+  background: #3ac76e;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1263,7 +1266,7 @@ h6 {
 }
 
 #subscribe button:hover {
-  background: #13810C;
+  background: #13810c;
 }
 
 @media (max-width: 460px) {
@@ -1319,13 +1322,13 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #3AC76E;
+  background-color: #3ac76e;
   border: 0;
   color: #fff;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #13810C;
+  background-color: #13810c;
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1338,13 +1341,13 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #3AC76E;
+  background-color: #3ac76e;
   border: 0;
   color: #fff;
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #13810C;
+  background-color: #13810c;
 }
 
 /*--------------------------------------------------------------
@@ -1386,7 +1389,7 @@ h6 {
 }
 
 #contact .contact-info a:hover {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 #contact .contact-address,
@@ -1461,7 +1464,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #3AC76E;
+  border-color: #3ac76e;
 }
 
 #contact .php-email-form input {
@@ -1473,7 +1476,7 @@ h6 {
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #3AC76E;
+  background: #3ac76e;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1483,7 +1486,7 @@ h6 {
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #13810C;
+  background: #13810c;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1567,7 +1570,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #3AC76E;
+  background: #3ac76e;
   color: #fff;
 }
 
@@ -1578,7 +1581,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #3AC76E;
+  border-bottom: 2px solid #3ac76e;
 }
 
 #footer .footer-top .footer-links {
@@ -1593,7 +1596,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #3AC76E;
+  color: #3ac76e;
   font-size: 18px;
 }
 
@@ -1611,7 +1614,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #3AC76E;
+  color: #3ac76e;
 }
 
 #footer .footer-top .footer-contact {
@@ -1633,7 +1636,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #3AC76E;
+  background: #3ac76e;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -1644,7 +1647,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #13810C;
+  background: #13810c;
 }
 
 #footer .copyright {
@@ -1670,4 +1673,9 @@ h6 {
 #flipdown {
   margin-top: 90px;
   margin-bottom: 90px;
+}
+
+.devfolio-button-iframe {
+  width: 275px !important;
+  height: 44px;
 }
