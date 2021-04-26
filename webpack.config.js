@@ -68,4 +68,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
   ],
 
+  devServer: {
+    compress: true,
+  },
 };

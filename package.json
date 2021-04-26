@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "start": "webpack serve --open",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
