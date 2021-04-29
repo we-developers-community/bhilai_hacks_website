@@ -128,7 +128,13 @@ const FlipDown = require("./flipdown");
     true
   );
 
+  function loaderjs() {
+    document.getElementById("preload").style.display="none";
+  }
   window.addEventListener("load", () => {
+
+    loaderjs();
+
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash);
@@ -195,6 +201,9 @@ const FlipDown = require("./flipdown");
 
   // For Flipdown.js
   document.addEventListener("DOMContentLoaded", () => {
+    
+    
+   
     // Unix timestamp (in seconds) to count down to
     // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
     var endDate = 1621017000; //Unix timestamp for 2021-04-24T00:00:00+05:30
