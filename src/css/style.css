@@ -45,7 +45,7 @@ h6 {
 }
 
 /* Prelaoder */
-#preloader {
+/* #preloader {
   position: fixed;
   left: 0;
   top: 0;
@@ -54,7 +54,7 @@ h6 {
   height: 100%;
   overflow: visible;
   background: #fff url("../assets/img/webpack/bh-icon-style.png") no-repeat center center;
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button
