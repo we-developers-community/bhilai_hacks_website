@@ -27,10 +27,10 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.5.0",
+    "particles.js": "^2.0.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2",
-    "particles.js": "^2.0.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "particle.js": "^1.0.7"
