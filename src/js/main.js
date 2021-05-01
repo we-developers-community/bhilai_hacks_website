@@ -1,4 +1,5 @@
 import "../css/style.css";
+import "../css/custom.css"
 import "../css/flipdown.css";
 const FlipDown = require("./flipdown");
 

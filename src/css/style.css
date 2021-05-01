@@ -753,6 +753,7 @@ h6 {
 .speakers .speaker .details .social i {
   line-height: 0;
   margin: 0 2px;
+  font-size: 1.18rem;
 }
 
 .speakers .speaker .details a {
@@ -1670,21 +1671,3 @@ h6 {
   text-align: center;
 }
 
-#flipdown {
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-
-.devfolio-button-iframe {
-  width: 275px !important;
-  height: 44px;
-}
-
-
-.gold-supporters-logo {
-  height: 130px!important;
-}
-
-.sponsor-title {
-  height: 50px;
-}

@@ -1,0 +1,38 @@
+:root {
+  --guest-image-width: 300px;
+}
+
+.guest-img {
+  height: var(--guest-image-width);
+  width: var(--guest-image-width);
+  object-fit: contain;
+}
+
+.guest {
+  width: var(--guest-image-width);
+  height: var(--guest-image-width);
+  padding-left: 0;
+  margin: calc(1.5rem / 2);
+}
+
+#flipdown {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.devfolio-button-iframe {
+  width: 275px !important;
+  height: 44px;
+}
+
+.gold-supporters-logo {
+  height: 130px !important;
+}
+
+.sponsor-title {
+  height: 50px;
+}
+
+#schedule .nav-tabs li {
+  margin: 5px;
+}
