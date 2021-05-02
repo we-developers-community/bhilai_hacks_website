@@ -60,12 +60,6 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
     }),
-
-    // Generates `speaker-details.html` in the output folder
-    new HtmlWebpackPlugin({
-      filename: "speaker-details.html",
-      template: "./src/speaker-details.html",
-    }),
     new MiniCssExtractPlugin(),
   ],
 
