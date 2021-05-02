@@ -1,6 +1,10 @@
 import "../css/style.css";
 import "../css/custom.css"
 import "../css/flipdown.css";
+
+import ShortLogo from "../assets/img/webpack/bh-icon.png";
+import BigLogo from "../assets/img/webpack/bh_logo_regular.png";
+
 const FlipDown = require("./flipdown");
 
 (function () {
@@ -66,12 +70,19 @@ const FlipDown = require("./flipdown");
   };
 
   let selectHeader = select("#header");
+  let siteLogo = select("img#site-logo");
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add("header-scrolled");
+
+        // Change to `Biglogo` when site scrolled down the hero section
+        siteLogo.src = BigLogo;
       } else {
+
+           // Change to `ShortLogo` when site scrolled down the hero section
         selectHeader.classList.remove("header-scrolled");
+        siteLogo.src = ShortLogo;
       }
     };
     window.addEventListener("load", headerScrolled);

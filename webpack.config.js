@@ -39,7 +39,7 @@ module.exports = {
       },
       { 
         // Only match image files inside the `assets/img/webpack/` directory
-        test: os.platform() === 'win32' ? /src\\assets\\img\\webpack\\[A-Za-z0-9- (){}@#%$^&*+-/\\|\[\]~`!'":;<>,.?]*\.(png|jpe?g|gif|svg)$/i : /src\/assets\/img\/webpack\/[A-Za-z0-9- (){}@#%$^&*+-/\\|\[\]~`!'":;<>,.?]*\.(png|jpe?g|gif|svg)$/i,
+        test: os.platform() === 'win32' ? /src\\assets\\img\\webpack\\[A-Za-z0-9-_ (){}@#%$^&*+-/\\|\[\]~`!'":;<>,.?]*\.(png|jpe?g|gif|svg)$/i : /src\/assets\/img\/webpack\/[A-Za-z0-9-_ (){}@#%$^&*+-/\\|\[\]~`!'":;<>,.?]*\.(png|jpe?g|gif|svg)$/i,
         exclude: /(node_modules)/,
         use: [
           {

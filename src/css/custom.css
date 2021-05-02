@@ -2,6 +2,11 @@
   --guest-image-width: 300px;
 }
 
+* {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+
 .guest-img {
   height: var(--guest-image-width);
   width: var(--guest-image-width);
@@ -29,10 +34,44 @@
   height: 130px !important;
 }
 
+.silver-supporters-logo {
+  height: 100px !important;
+}
+
 .sponsor-title {
   height: 50px;
 }
 
+@media (min-width: 1200px) {
+  .supporters-wrap .col-xl-1 {
+    width: 15.6666%!important;
+  }
+}
+
 #schedule .nav-tabs li {
   margin: 5px;
+}
+.navbar-mobile a {
+  font-size: 15px;
+  padding-bottom: 6px !important;
+}
+
+.navbar > ul > li > a {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+#hero h1 {
+  font-weight: 700;
+}
+
+#site-logo {
+  transition: width 2s ease-in-out;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: unset;
 }
