@@ -9,7 +9,7 @@
 .guest-img {
   height: var(--guest-image-width);
   width: var(--guest-image-width);
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .guest {
@@ -95,4 +95,9 @@
 #discord-button i {
   font-size: 24px;
   margin-right: 8px;
+}
+
+
+.schedule .schedule-item time span{
+  white-space: nowrap;
 }
