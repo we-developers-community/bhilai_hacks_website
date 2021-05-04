@@ -451,7 +451,7 @@ import FlipDown from "./flipdown"
             const xwalk=(x/width*walk)-(walk/2);
             const ywalk=(y/height*walk)-(walk/2);
 
-            textC.style.textShadow=`${xwalk}px ${ywalk}px 2px black`;
+            textC.style.textShadow=`${-xwalk}px ${-ywalk}px 2px black`;
             
         }
         heroC.addEventListener('mousemove',shadow);

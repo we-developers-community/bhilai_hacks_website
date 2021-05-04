@@ -2000,36 +2000,19 @@ body{
 /* BHILAI HACK SWING ANIMA */
 
 #herotext{ 
-  -webkit-animation-duration: 10s; 
-  animation-duration: 10s; 
-  -webkit-animation-fill-mode: both; 
-  animation-fill-mode: both; 
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  animation: shadow 2s linear infinite;
 }
 
-@-webkit-keyframes swing { 
-  20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
-  20% { -webkit-transform: rotate(15deg); } 
-  40% { -webkit-transform: rotate(-10deg); } 
-  60% { -webkit-transform: rotate(5deg); } 
-  80% { -webkit-transform: rotate(-5deg); } 
-  100% { -webkit-transform: rotate(0deg); } 
-}
-
-@keyframes swing { 
-  20% { transform: rotate(15deg); } 
-  40% { transform: rotate(-10deg); } 
-  60% { transform: rotate(5deg); } 
-  80% { transform: rotate(-5deg); } 
-  100% { transform: rotate(0deg); } 
-}
-
-.swing { 
-  -webkit-transform-origin: top center; 
-  transform-origin: top center; 
-  -webkit-animation-name: swing; 
-  animation-name: swing; 
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+@media (max-width: 900px) {
+  @keyframes shadow {
+    0%{
+      text-shadow: 0px 0px 0px black;
+    }
+    50%{
+      text-shadow: 15px -2px 6px black;
+    }
+    100%{
+      text-shadow: 0px 0px 0px black;
+    }
+  }
 }
