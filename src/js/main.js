@@ -432,6 +432,30 @@ import FlipDown from "./flipdown"
     var eleCon=document.getElementById("contact");
     document.getElementById("contact-sec").style.height=(eleCon.offsetHeight-60)+"px";
 
+// SHOW EFFEC WITH MOUSE
+    var heroC=document.querySelector('#hero');
+        var textC=hero.querySelector('#herotext');
+
+        function shadow(e){
+            const width=heroC.offsetWidth;
+            const height=heroC.offsetHeight;
+            const walk=30;
+
+            var x=e.offsetX;
+            var y=e.offsetY; 
+
+            if(this !==e.target){
+                x=x+e.target.offsetLeft;
+                y=y+e.target.offsetTop;
+            }
+            const xwalk=(x/width*walk)-(walk/2);
+            const ywalk=(y/height*walk)-(walk/2);
+
+            textC.style.textShadow=`${xwalk}px ${ywalk}px 2px black`;
+            
+        }
+        heroC.addEventListener('mousemove',shadow);
+
 
     // Unix timestamp (in seconds) to count down to
     // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
