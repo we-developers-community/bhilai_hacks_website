@@ -112,12 +112,16 @@
   border-style: double;
 }
 
-.prize-border a {
-  color:#2b7e49;
+.category-border {
+  border-width: 5px;
+}
+
+.prize-border a, .category-border a{
+  color: #2b7e49;
 }
 
 .gold-border {
-  border-color: #ffd700!important;
+  border-color: #ffd700 !important;
 }
 
 /* .gold-border a {
@@ -126,9 +130,23 @@
 } */
 
 .silver-border {
-  border-color: #c0c0c0!important;
+  border-color: #c0c0c0 !important;
 }
 
 .bronze-border {
-  border-color: #cd7f32!important;
+  border-color: #cd7f32 !important;
+}
+
+#buy-tickets {
+  padding-bottom: 20px;
+}
+
+.category-border img {
+  height: 50px;
+  transform: scale(0.9);
+  object-fit: contain;
+}
+
+.category-border .card-price {
+  font-size: 24px !important;
 }
