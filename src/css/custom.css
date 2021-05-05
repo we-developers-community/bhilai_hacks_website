@@ -112,6 +112,11 @@
   border-style: double;
 }
 
+
+.category-border {
+  border-width: 5px;
+}
+
 .prize-border a {
   color:#2b7e49;
 }
@@ -131,4 +136,18 @@
 
 .bronze-border {
   border-color: #cd7f32!important;
+}
+
+
+#buy-tickets {
+  padding-bottom: 20px;
+}
+
+.category-border img {
+  height: 60px;
+  width: auto;
+}
+
+.category-border .card-price {
+  font-size: 28px !important;
 }
