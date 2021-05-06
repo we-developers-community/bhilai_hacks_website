@@ -439,10 +439,12 @@ const FlipDown = require("./flipdown");
     document.getElementById("contact-sec").style.height=(eleCon.offsetHeight-60)+"px";
 
 // SHOW EFFEC WITH MOUSE
+
     var heroC=document.querySelector('#hero');
         var textC=hero.querySelector('#herotext');
 
         function shadow(e){
+          if (window.innerWidth>900) {
             const width=heroC.offsetWidth;
             const height=heroC.offsetHeight;
             const walk=30;
@@ -458,7 +460,10 @@ const FlipDown = require("./flipdown");
             const ywalk=(y/height*walk)-(walk/2);
 
             textC.style.textShadow=`${-xwalk}px ${-ywalk}px 2px black`;
-            
+          }
+          else{
+            console.log("ni chlega");
+          }   
         }
         heroC.addEventListener('mousemove',shadow);
     // Unix timestamp (in seconds) to count down to

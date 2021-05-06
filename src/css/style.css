@@ -1982,7 +1982,7 @@ body{
 /* BHILAI HACK SWING ANIMA */
 
 #herotext{ 
-  animation: shadow 2s linear ease-in;
+  animation: shadow 2s ease-in infinite;
 }
 
 @media (max-width: 900px) {
@@ -1991,7 +1991,7 @@ body{
       text-shadow: 0px 0px 0px black;
     }
     50%{
-      text-shadow: 10px -5px 6px black;
+      text-shadow: 8px -5px 6px black;
     }
     100%{
       text-shadow: 0px 0px 0px black;
