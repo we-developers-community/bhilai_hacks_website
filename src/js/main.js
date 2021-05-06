@@ -82,7 +82,7 @@ const FlipDown = require("./flipdown");
         // Change to `Biglogo` when site scrolled down the hero section
         siteLogo.src = BigLogo;
       } else {
-        // Change to `ShortLogo` when site scrolled down the hero section
+        // Change to `ShortLogo` when site scrolled to the hero section
         selectHeader.classList.remove("header-scrolled");
         siteLogo.src = ShortLogo;
       }
@@ -441,6 +441,8 @@ const FlipDown = require("./flipdown");
     var textC = hero.querySelector("#herotext");
 
     function shadow(e) {
+
+      // Show the animation only on small screens
       if (window.innerWidth > 900) {
         const width = heroC.offsetWidth;
         const height = heroC.offsetHeight;
@@ -457,9 +459,7 @@ const FlipDown = require("./flipdown");
         const ywalk = (y / height) * walk - walk / 2;
 
         textC.style.textShadow = `${-xwalk}px ${-ywalk}px 4px rgb(10,10,10)`;
-      } else {
-        console.log("ni chlega");
-      }
+      } 
     }
     heroC.addEventListener("mousemove", shadow);
     // Unix timestamp (in seconds) to count down to
