@@ -1,11 +1,16 @@
+
+import GreenLeaf from "../assets/img/webpack/green.png";
+
 import "../css/style.css";
 import "../css/custom.css"
 import "../css/flipdown.css";
+import "./particles";
 
 import ShortLogo from "../assets/img/webpack/bh-icon.png";
 import BigLogo from "../assets/img/webpack/bh_logo_regular.png";
 
 const FlipDown = require("./flipdown");
+
 
 (function () {
   "use strict";
@@ -141,6 +146,7 @@ const FlipDown = require("./flipdown");
   );
 
   window.addEventListener("load", () => {
+    document.getElementById("preload").style.display = "none";
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash);
@@ -207,6 +213,254 @@ const FlipDown = require("./flipdown");
 
   // For Flipdown.js
   document.addEventListener("DOMContentLoaded", () => {
+
+    window.particlesJS("hero", {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 600,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "image",
+          stroke: {
+            width: 0,
+            color: "#000000",
+          },
+          polygon: {
+            nb_sides: 6,
+          },
+          image: {
+            src: GreenLeaf,
+            width: 200,
+            height: 200,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+          distance: 500,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "bottom-left",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 2000,
+            rotateY: 3000,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onclick: {
+            enable: true,
+            mode: "repulse",
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 0.5,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 0.3,
+            opacity: 1,
+            speed: 3,
+          },
+          repulse: {
+            distance: 100,
+            duration: 10,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+    window.particlesJS("contact-sec", {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 600,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "image",
+          stroke: {
+            width: 0,
+            color: "#000000",
+          },
+          polygon: {
+            nb_sides: 6,
+          },
+          image: {
+            src: GreenLeaf,
+            width: 200,
+            height: 200,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+          distance: 500,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "bottom-left",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 2000,
+            rotateY: 3000,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onclick: {
+            enable: true,
+            mode: "repulse",
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 0.5,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 0.3,
+            opacity: 1,
+            speed: 3,
+          },
+          repulse: {
+            distance: 100,
+            duration: 10,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+
+    var eleCon=document.getElementById("contact");
+    document.getElementById("contact-sec").style.height=(eleCon.offsetHeight-60)+"px";
+
+// SHOW EFFEC WITH MOUSE
+    var heroC=document.querySelector('#hero');
+        var textC=hero.querySelector('#herotext');
+
+        function shadow(e){
+            const width=heroC.offsetWidth;
+            const height=heroC.offsetHeight;
+            const walk=30;
+
+            var x=e.offsetX;
+            var y=e.offsetY; 
+
+            if(this !==e.target){
+                x=x+e.target.offsetLeft;
+                y=y+e.target.offsetTop;
+            }
+            const xwalk=(x/width*walk)-(walk/2);
+            const ywalk=(y/height*walk)-(walk/2);
+
+            textC.style.textShadow=`${-xwalk}px ${-ywalk}px 2px black`;
+            
+        }
+        heroC.addEventListener('mousemove',shadow);
     // Unix timestamp (in seconds) to count down to
     // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
     var endDate = 1621017000; //Unix timestamp for 2021-04-24T00:00:00+05:30
