@@ -1,5 +1,5 @@
 import "../css/style.css";
-import "../css/custom.css"
+import "../css/custom.css";
 import "../css/flipdown.css";
 
 import ShortLogo from "../assets/img/webpack/bh-icon.png";
@@ -79,8 +79,7 @@ const FlipDown = require("./flipdown");
         // Change to `Biglogo` when site scrolled down the hero section
         siteLogo.src = BigLogo;
       } else {
-
-           // Change to `ShortLogo` when site scrolled down the hero section
+        // Change to `ShortLogo` when site scrolled down the hero section
         selectHeader.classList.remove("header-scrolled");
         siteLogo.src = ShortLogo;
       }
@@ -209,7 +208,7 @@ const FlipDown = require("./flipdown");
   document.addEventListener("DOMContentLoaded", () => {
     // Unix timestamp (in seconds) to count down to
     // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
-    var endDate = 1621017000; //Unix timestamp for 2021-04-24T00:00:00+05:30
+    var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
     // console.log(endDate);
     // Set up FlipDown
     var flipdown = new FlipDown(endDate)
@@ -223,6 +222,13 @@ const FlipDown = require("./flipdown");
 
     var ver = document.getElementById("ver");
     // ver.innerHTML = flipdown.version;
-  });
 
+    if (window.location.hash) {
+      const someModal = new bootstrap.Modal(
+        document.querySelector(window.location.hash),
+        {}
+      );
+      someModal.show();
+    }
+  });
 })();
