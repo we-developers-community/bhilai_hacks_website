@@ -116,7 +116,8 @@
   border-width: 5px;
 }
 
-.prize-border a, .category-border a{
+.prize-border a,
+.category-border a {
   color: #2b7e49;
 }
 
@@ -149,4 +150,27 @@
 
 .category-border .card-price {
   font-size: 24px !important;
+}
+
+.speaker-modal {
+}
+
+.speaker-modal img {
+  object-fit: cover;
+}
+
+.speaker-modal .event-calendar-icon {
+  font-size: 1.15rem;
+}
+
+.speaker-modal .social-icon {
+  font-size: 1.5rem;
+}
+
+.speaker-modal .youtube-icon {
+  font-size: 20px;
+}
+  
+.speaker-modal img {
+  border: 4px solid #3ac76e;
 }
