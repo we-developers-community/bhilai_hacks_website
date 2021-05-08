@@ -224,12 +224,14 @@ const FlipDown = require("./flipdown");
     // ver.innerHTML = flipdown.version;
 
     if (window.location.hash) {
+
       const modalElement = document.querySelector(window.location.hash);
 
       if (modalElement && modalElement.classList.contains("modal")) {
         const someModal = new bootstrap.Modal(modalElement, {});
         someModal.show();
       }
+
     }
   });
 })();
