@@ -1,8 +1,7 @@
-
 import GreenLeaf from "../assets/img/webpack/green.png";
 
 import "../css/style.css";
-import "../css/custom.css"
+import "../css/custom.css";
 import "../css/flipdown.css";
 import "./particles";
 
@@ -10,7 +9,6 @@ import ShortLogo from "../assets/img/webpack/bh-icon.png";
 import BigLogo from "../assets/img/webpack/bh_logo_regular.png";
 
 const FlipDown = require("./flipdown");
-
 
 (function () {
   "use strict";
@@ -84,8 +82,7 @@ const FlipDown = require("./flipdown");
         // Change to `Biglogo` when site scrolled down the hero section
         siteLogo.src = BigLogo;
       } else {
-
-           // Change to `ShortLogo` when site scrolled down the hero section
+        // Change to `ShortLogo` when site scrolled to the hero section
         selectHeader.classList.remove("header-scrolled");
         siteLogo.src = ShortLogo;
       }
@@ -213,7 +210,6 @@ const FlipDown = require("./flipdown");
 
   // For Flipdown.js
   document.addEventListener("DOMContentLoaded", () => {
-
     window.particlesJS("hero", {
       particles: {
         number: {
@@ -435,37 +431,37 @@ const FlipDown = require("./flipdown");
       retina_detect: true,
     });
 
-    var eleCon=document.getElementById("contact");
-    document.getElementById("contact-sec").style.height=(eleCon.offsetHeight-60)+"px";
+    var eleCon = document.getElementById("contact");
+    document.getElementById("contact-sec").style.height =
+      eleCon.offsetHeight - 60 + "px";
 
-// SHOW EFFEC WITH MOUSE
+    // SHOW EFFEC WITH MOUSE
 
-    var heroC=document.querySelector('#hero');
-        var textC=hero.querySelector('#herotext');
+    var heroC = document.querySelector("#hero");
+    var textC = hero.querySelector("#herotext");
 
-        function shadow(e){
-          if (window.innerWidth>900) {
-            const width=heroC.offsetWidth;
-            const height=heroC.offsetHeight;
-            const walk=30;
+    function shadow(e) {
 
-            var x=e.offsetX;
-            var y=e.offsetY; 
+      // Show the animation only on small screens
+      if (window.innerWidth > 900) {
+        const width = heroC.offsetWidth;
+        const height = heroC.offsetHeight;
+        const walk = 30;
 
-            if(this !==e.target){
-                x=x+e.target.offsetLeft;
-                y=y+e.target.offsetTop;
-            }
-            const xwalk=(x/width*walk)-(walk/2);
-            const ywalk=(y/height*walk)-(walk/2);
+        var x = e.offsetX;
+        var y = e.offsetY;
 
-            textC.style.textShadow=`${-xwalk}px ${-ywalk}px 2px black`;
-          }
-          else{
-            console.log("ni chlega");
-          }   
+        if (this !== e.target) {
+          x = x + e.target.offsetLeft;
+          y = y + e.target.offsetTop;
         }
-        heroC.addEventListener('mousemove',shadow);
+        const xwalk = (x / width) * walk - walk / 2;
+        const ywalk = (y / height) * walk - walk / 2;
+
+        textC.style.textShadow = `${-xwalk}px ${-ywalk}px 4px rgb(10,10,10)`;
+      } 
+    }
+    heroC.addEventListener("mousemove", shadow);
     // Unix timestamp (in seconds) to count down to
     // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
     var endDate = 1621017000; //Unix timestamp for 2021-04-24T00:00:00+05:30
@@ -483,5 +479,4 @@ const FlipDown = require("./flipdown");
     var ver = document.getElementById("ver");
     // ver.innerHTML = flipdown.version;
   });
-
 })();
