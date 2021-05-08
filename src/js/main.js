@@ -226,7 +226,7 @@ const FlipDown = require("./flipdown");
     if (window.location.hash) {
       const modalElement = document.querySelector(window.location.hash);
 
-      if (modalElement) {
+      if (modalElement && modalElement.classList.includes("modal")) {
         const someModal = new bootstrap.Modal(modalElement, {});
         someModal.show();
       }
