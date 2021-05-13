@@ -152,8 +152,6 @@
   font-size: 24px !important;
 }
 
-.speaker-modal {
-}
 
 .speaker-modal img {
   object-fit: cover;
@@ -173,4 +171,17 @@
   
 .speaker-modal img {
   border: 4px solid #3ac76e;
+}
+
+
+.speaker.col {
+  flex: none;
+}
+
+#team-section .sponsor-title h4{
+
+  color: #227741;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 600;
 }
