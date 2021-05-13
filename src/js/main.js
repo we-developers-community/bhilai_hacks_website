@@ -5,6 +5,8 @@ import "../css/custom.css";
 import "../css/flipdown.css";
 import "./particles";
 
+import "../js/team";
+
 import ShortLogo from "../assets/img/webpack/bh-icon.png";
 import BigLogo from "../assets/img/webpack/bh_logo_regular.png";
 
@@ -74,7 +76,7 @@ const FlipDown = require("./flipdown");
 
   let selectHeader = select("#header");
   let siteLogo = select("img#site-logo");
-  if (selectHeader) {
+  if (selectHeader && !selectHeader.classList.contains("keep-scrolled")) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add("header-scrolled");
@@ -195,9 +197,8 @@ const FlipDown = require("./flipdown");
   // });
 
   on("show.bs.modal", "#buy-ticket-modal", function (event) {
-    select(
-      "#buy-ticket-modal #ticket-type"
-    ).value = event.relatedTarget.getAttribute("data-ticket-type");
+    select("#buy-ticket-modal #ticket-type").value =
+      event.relatedTarget.getAttribute("data-ticket-type");
   });
 
   window.addEventListener("load", () => {
@@ -442,7 +443,6 @@ const FlipDown = require("./flipdown");
     var textC = hero.querySelector("#herotext");
 
     function shadow(e) {
-
       // Show the animation only on small screens
       if (window.innerWidth > 900) {
         const width = heroC.offsetWidth;
@@ -460,7 +460,7 @@ const FlipDown = require("./flipdown");
         const ywalk = (y / height) * walk - walk / 2;
 
         textC.style.textShadow = `${-xwalk}px ${-ywalk}px 4px rgb(10,10,10)`;
-      } 
+      }
     }
     heroC.addEventListener("mousemove", shadow);
     // Unix timestamp (in seconds) to count down to
@@ -477,18 +477,18 @@ const FlipDown = require("./flipdown");
         // console.log("The countdown has ended!");
       });
 
-    var ver = document.getElementById("ver");
-    // ver.innerHTML = flipdown.version;
+
+
+
+
 
     if (window.location.hash) {
-
       const modalElement = document.querySelector(window.location.hash);
 
       if (modalElement && modalElement.classList.contains("modal")) {
         const someModal = new bootstrap.Modal(modalElement, {});
         someModal.show();
       }
-
     }
   });
 })();
