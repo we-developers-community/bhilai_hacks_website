@@ -247,6 +247,55 @@
 
     <!-- Pre-hack Session Modals -->
 
+    <!-- Keynote Modal -->
+    <div class="speaker-modal modal fade" id="keynote-starts" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+        <div class="modal-content">
+
+          <div class="modal-body text-center d-flex flex-column justify-content-center">
+            <h3 class="mb-2">Keynote and Panel Discussion <br /> Bhilai Hacks 2021 </h3>
+            <p class="mb-3">
+
+            </p>
+
+            <p class="mb-3">
+              <i class="bi bi-calendar-event me-2 event-calendar-icon"></i>
+              May 15th, 3:00 PM
+            </p>
+
+            <!-- <div class="mb-3 sponsor-title d-flex align-items-center justify-content-start container">
+              <div class="dropdown-divider flex-fill"> </div>
+              <span class="text-muted mb-0 px-3 text-center">by</span>
+              <div class="dropdown-divider flex-fill"> </div>
+            </div>
+            <img width="150px" height="150px" class="rounded-circle img-responsive mx-auto d-block mb-2"
+              src="./assets/img/speakers/abir_pal.jpeg" alt="Abir Pal">
+
+            <h4 class="mb-2"> Abir Pal</h4>
+            <p class="mb-2">
+              Engineering Fellow at MLH
+            </p>
+
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/imabp/">
+              <i class="bi bi-linkedin social-icon" style="color: #0a66c2"></i>
+            </a> -->
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success p-2" data-bs-dismiss="modal">Close</button>
+            <a class="btn btn-danger d-flex align-items-center" rel="noopener" target="_blank"
+              href="https://bit.ly/bhx-keynote">
+              <i class="bi bi-youtube youtube-icon me-2"></i>
+              <span>
+                Watch Session
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Abir Pal Modal -->
     <div class="speaker-modal modal fade" id="git-workshop" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
@@ -660,7 +709,7 @@
 
             <!-- Machine learning session -->
             <div class="row schedule-item" id="ml-workshop">
-              <div class="col-md-2 d-flex align-items-center text-success">
+              <div class="col-md-2 d-flex align-items-center text-muted">
                 <time>
                   May 14, <span>4:00 <small>PM</small></span>
                 </time>
@@ -725,6 +774,88 @@
                     <!-- <span></span> -->
                   </h4>
                   <p> Registration process for the hackathon ends on Devfolio</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Keynote Starts -->
+            <div class="row schedule-item" id="flutter-workshop">
+              <div class="col-md-2 d-flex align-items-center text-success">
+                <time>
+                  May 15, <span>3:00 <small>PM</small></span>
+                </time>
+              </div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/schedule/keynote.png" alt="Keynote Starts" />
+                </div>
+                <div class="d-flex flex-column">
+                  <h4>Keynote Starts
+                    <!-- <span></span> -->
+                  </h4>
+                  <p>A brief introduction about our hackathon</p>
+                  <a href="#!" data-bs-toggle="modal" data-bs-target="#keynote-starts">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sponsors Spotlight -->
+            <div class="row schedule-item" id="flutter-workshop">
+              <div class="col-md-2 d-flex align-items-center text-success">
+                <time>
+                  May 15, <span>3:25 <small>PM</small></span>
+                </time>
+              </div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/schedule/sponsors.png" alt="Sponsors Spotlight" />
+                </div>
+                <div class="d-flex flex-column">
+                  <h4>Sponsors Spotlight
+                    <!-- <span></span> -->
+                  </h4>
+                  <p>A word from our sponsors about their products and related challenges
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Discussion -->
+            <div class="row schedule-item" id="flutter-workshop">
+              <div class="col-md-2 d-flex align-items-center text-success">
+                <time>
+                  May 15, <span>4:00 <small>PM</small></span>
+                </time>
+              </div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/schedule/panel.png" alt="Panel Discussion" />
+                </div>
+                <div class="d-flex flex-column">
+                  <h4> Panel Discussion
+                    <!-- <span></span> -->
+                  </h4>
+                  <p> A Panel Discussion on "Role of Hackathons in Developer's Journey" </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- QnA & KickOff -->
+            <div class="row schedule-item" id="flutter-workshop">
+              <div class="col-md-2 d-flex align-items-center text-success">
+                <time>
+                  May 15, <span>5:00 <small>PM</small></span>
+                </time>
+              </div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/schedule/QnA.png" alt="Qna and KickOff" />
+                </div>
+                <div class="d-flex flex-column">
+                  <h4> QnA & KickOff
+                    <!-- <span></span> -->
+                  </h4>
+                  <p>Ask your questions related to hackathon and other relevant stuff</p>
                 </div>
               </div>
             </div>
@@ -1288,6 +1419,15 @@
             </div>
           </div>
 
+
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <a target="_blank" rel="noopener" href="https://www.notion.so/pranjalbareth/Prizes-5e1fd46fc5834c74bf31bf6e0bdcfe6d"
+            class="btn btn-success btn-lg my-5"
+            style="background-color:#227741;border-color:#227741;width:fit-content;font-weight: 600;">Learn more about
+            our Prizes</a>
         </div>
 
       </div>
@@ -1978,7 +2118,8 @@
             <div class="supporter-logo gold-supporters-logo my-4">
               <a rel="noopener" target="_blank"
                 href="https://sawolabs.com/?utm_source=hacakthon&utm_medium=BhilaiHacks&utm_campaign=HackPartner">
-                <img src="./assets/img/sponsors/sawolabs-logo.png" style="height: 130px;object-fit: contain;" class="img-fluid" alt="Sawo Labs" />
+                <img src="./assets/img/sponsors/sawolabs-logo.png" style="height: 130px;object-fit: contain;"
+                  class="img-fluid" alt="Sawo Labs" />
               </a>
             </div>
           </div>
@@ -1995,7 +2136,8 @@
           <div class="col-lg-4 col-md-5 col-10">
             <div class="supporter-logo gold-supporters-logo">
               <a rel="noopener" target="_blank" href="https://gdg.community.dev/gdg-nagpur">
-                <img style="height: 70px!important;object-fit: contain;" src="./assets/img/community-partners/GDG Nagpur Light Horizontal-Logo.png" class="img-fluid"
+                <img style="height: 70px!important;object-fit: contain;"
+                  src="./assets/img/community-partners/GDG Nagpur Light Horizontal-Logo.png" class="img-fluid"
                   alt="GDG Nagpur" />
               </a>
             </div>
@@ -2016,8 +2158,7 @@
             <div class="supporter-logo gold-supporters-logo">
               <a rel="noopener" target="_blank" href="https://dscggv.github.io">
                 <img style="height:220px!important;object-fit: contain;"
-                  src="./assets/img/community-partners/dsc_ggv.png" class="img-fluid"
-                  alt="Developer Student Clubs
+                  src="./assets/img/community-partners/dsc_ggv.png" class="img-fluid" alt="Developer Student Clubs
                   Guru Ghasidas Vishwavidyalaya" />
               </a>
             </div>
