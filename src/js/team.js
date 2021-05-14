@@ -1,5 +1,3 @@
-const orgranizersData = [];
-
 document.addEventListener("DOMContentLoaded", function () {
   const organizersTeamSection = document.querySelector(
     "#organizers-team-section"
@@ -11,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const orders = [...Array(teamQuantity).keys()];
 
-    console.log(orders);
+    // console.log(orders);
 
     organizersTeamSection.childNodes.forEach((el) => {
-      console.log(el);
+      // console.log(el);
 
       const randomOrder = orders[Math.floor(Math.random() * teamQuantity)];
       orders.splice(randomOrder, 1);

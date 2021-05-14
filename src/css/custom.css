@@ -99,6 +99,10 @@
   margin-right: 8px;
 }
 
+.schedule .schedule-item time {
+  font-weight: 600;
+}
+
 .schedule .schedule-item time span {
   white-space: nowrap;
 }
