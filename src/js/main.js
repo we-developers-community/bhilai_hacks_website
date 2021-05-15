@@ -208,6 +208,31 @@ const FlipDown = require("./flipdown");
       once: true,
       mirror: false,
     });
+
+    // Unix timestamp (in seconds)
+    // var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
+
+    var endDate = 1621067460; //Unix timestamp for 2021-05-15 6 PM
+
+    // Set up FlipDown
+    var flipdown = new FlipDown(endDate)
+      // Start the countdown
+      .start()
+      // Do something when the countdown ends
+      .ifEnded(() => {
+        const flipDownTitle = document.querySelector("#flipdown-title");
+
+        flipDownTitle.innerText = "Hackathon Started! 🎉";
+
+        // Launch confetti after 2 seconds
+        confetti({
+          particleCount: 500,
+          resize: true,
+          spread: 360,
+        });
+        //Write Celebration animation code
+        // console.log("The countdown has ended!");
+      });
   });
 
   // For Flipdown.js
@@ -464,32 +489,7 @@ const FlipDown = require("./flipdown");
     }
     heroC.addEventListener("mousemove", shadow);
 
-    // Unix timestamp (in seconds)
-    // var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
-
-    var endDate = 1621067040; //Unix timestamp for 2021-05-15 6 PM
-
-    // Set up FlipDown
-    var flipdown = new FlipDown(endDate)
-      // Start the countdown
-      .start()
-      // Do something when the countdown ends
-      .ifEnded(() => {
-        const flipDownTitle = document.querySelector("#flipdown-title");
-
-        flipDownTitle.innerText = "Hackathon Started! 🎉";
-
-        // Launch confetti after 2 seconds
-        setTimeout(() => {
-          confetti({
-            particleCount: 500,
-            resize: true,
-            spread: 360,
-          });
-        }, 2500);
-        //Write Celebration animation code
-        // console.log("The countdown has ended!");
-      });
+    
 
     if (window.location.hash) {
       const modalElement = document.querySelector(window.location.hash);
