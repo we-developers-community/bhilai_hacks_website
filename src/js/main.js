@@ -210,7 +210,7 @@ const FlipDown = require("./flipdown");
     });
 
     // Unix timestamp (in seconds)
-    var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
+    var endDate = 1621171800; //Unix timestamp for 2021-05-15 6 PM
 
     // var endDate = 1621067460;
 
@@ -222,7 +222,7 @@ const FlipDown = require("./flipdown");
       .ifEnded(() => {
         const flipDownTitle = document.querySelector("#flipdown-title");
 
-        flipDownTitle.innerText = "Hackathon Started! 🎉";
+        flipDownTitle.innerText = "Hackathon Ended! Wait for your results 🎉";
 
         // Launch confetti after 2 seconds
         confetti({
@@ -230,7 +230,7 @@ const FlipDown = require("./flipdown");
           resize: true,
           spread: 360,
         });
-        //Write Celebration animation code
+        // Write Celebration animation code
         // console.log("The countdown has ended!");
       });
   });
