@@ -463,24 +463,33 @@ const FlipDown = require("./flipdown");
       }
     }
     heroC.addEventListener("mousemove", shadow);
-    // Unix timestamp (in seconds) to count down to
-    // var endDate = parseInt((new Date("2021-04-24T00:00:00+05:30")/1000).toFixed(0));
-    var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
-    // console.log(endDate);
+
+    // Unix timestamp (in seconds)
+    // var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
+
+    var endDate = 1621063320; //Unix timestamp for 2021-05-15 6 PM
+
     // Set up FlipDown
     var flipdown = new FlipDown(endDate)
       // Start the countdown
       .start()
       // Do something when the countdown ends
       .ifEnded(() => {
+        const flipDownTitle = document.querySelector("#flipdown-title");
+
+        flipDownTitle.innerText = "Hackathon Started! 🎉";
+
+        // Launch confetti after 2 seconds
+        setTimeout(() => {
+          confetti({
+            particleCount: 200,
+            resize: true,
+            spread: 1000,
+          });
+        }, 3000);
         //Write Celebration animation code
         // console.log("The countdown has ended!");
       });
-
-
-
-
-
 
     if (window.location.hash) {
       const modalElement = document.querySelector(window.location.hash);

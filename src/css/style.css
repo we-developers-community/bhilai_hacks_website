@@ -798,6 +798,14 @@ h6 {
   color: #fff;
 }
 
+@media(max-width: 550px) {
+  #about h2 {
+    font-size: x-large;
+  }
+}
+
+
+
 #about h3 {
   font-size: 18px;
   font-weight: bold;
