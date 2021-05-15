@@ -467,7 +467,7 @@ const FlipDown = require("./flipdown");
     // Unix timestamp (in seconds)
     // var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
 
-    var endDate = 1621063320; //Unix timestamp for 2021-05-15 6 PM
+    var endDate = 1621063800; //Unix timestamp for 2021-05-15 6 PM
 
     // Set up FlipDown
     var flipdown = new FlipDown(endDate)
@@ -482,9 +482,9 @@ const FlipDown = require("./flipdown");
         // Launch confetti after 2 seconds
         setTimeout(() => {
           confetti({
-            particleCount: 200,
+            particleCount: 500,
             resize: true,
-            spread: 1000,
+            spread: 360,
           });
         }, 3000);
         //Write Celebration animation code
