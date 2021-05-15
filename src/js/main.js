@@ -486,7 +486,7 @@ const FlipDown = require("./flipdown");
             resize: true,
             spread: 360,
           });
-        }, 3000);
+        }, 2500);
         //Write Celebration animation code
         // console.log("The countdown has ended!");
       });
