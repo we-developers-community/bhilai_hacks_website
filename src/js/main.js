@@ -467,7 +467,7 @@ const FlipDown = require("./flipdown");
     // Unix timestamp (in seconds)
     // var endDate = 1621081800; //Unix timestamp for 2021-05-15 6 PM
 
-    var endDate = 1621063800; //Unix timestamp for 2021-05-15 6 PM
+    var endDate = 1621067040; //Unix timestamp for 2021-05-15 6 PM
 
     // Set up FlipDown
     var flipdown = new FlipDown(endDate)
