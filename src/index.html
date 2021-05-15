@@ -101,22 +101,27 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0" id="herotext"><span>Bhilai</span> Hacks</h1>
       <p class="mb-5 pb-0">15 May - 16 May 2021 <br /> Happening Online</p>
-      <!-- <a rel="noopener"
-          href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-          class="glightbox play-btn mb-4"
-        ></a> -->
-      <!-- <a rel="noopener" href="#about" class="about-btn scrollto">About The Event</a> -->
+
+      <div class="d-flex justify-content-center flex-column" data-aos="fade-up">
+
+        <div class="text-center">
+          <b id="flipdown-title" class="text-white">Hackathon Begins in</b>
+        </div>
+
+        <div id="flipdown" class="flipdown"></div>
+
+      </div>
 
       <div class="button-section">
         <div class="apply-button" data-hackathon-slug="bhilai-hacks" data-button-theme="light"></div>
 
         <a href="https://discord.gg/8a8grAXuYM" target="_blank" rel="noopener" class="btn btn-primary"
-
           id="discord-button">
           <i class="bi bi-discord"></i>
           Join our Discord
         </a>
       </div>
+
     </div>
   </section>
   <!-- End Hero Section -->
@@ -124,6 +129,8 @@
   <main id="main">
     <!-- ======= About Section ======= -->
     <section id="about">
+
+
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6">
@@ -146,9 +153,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="example"> -->
-      <div id="flipdown" class="flipdown"></div>
-      <!-- </div> -->
 
     </section>
     <!-- End About Section -->
@@ -771,7 +775,7 @@
                   <img src="assets/img/schedule/registration.png" alt="Registration" />
                 </div>
                 <div class="d-flex flex-column">
-                  <h4>Registration Closes
+                  <h4>Registration Closed
                     <!-- <span></span> -->
                   </h4>
                   <p> Registration process for the hackathon ends on Devfolio</p>
@@ -952,7 +956,7 @@
             <div class="row schedule-item" id="flutter-workshop">
               <div class="col-md-2 d-flex align-items-center text-success">
                 <time>
-                  May 16, <span>7:00 <small>PM</small></span>
+                  May 16, <span>6:00 <small>PM</small></span>
                 </time>
               </div>
               <div class="col-md-10">
@@ -964,6 +968,26 @@
                     <!-- <span></span> -->
                   </h4>
                   <p> Have some rest and wait for your results!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submission Ends -->
+            <div class="row schedule-item" id="flutter-workshop">
+              <div class="col-md-2 d-flex align-items-center text-success">
+                <time>
+                  May 16, <span>7:00 <small>PM</small></span>
+                </time>
+              </div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/schedule/submission_ends.png" alt="Submission Ends" />
+                </div>
+                <div class="d-flex flex-column">
+                  <h4>Submission Ends
+                    <!-- <span></span> -->
+                  </h4>
+                  <p> Submission form closes on Devfolio </p>
                 </div>
               </div>
             </div>
@@ -2427,6 +2451,10 @@
     integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g=="
     crossorigin="anonymous"></script>  -->
   <!-- Vendor JS Files -->
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

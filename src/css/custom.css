@@ -21,8 +21,15 @@
 }
 
 #flipdown {
-  margin-top: 90px;
+  margin-top: 10px;
   margin-bottom: 90px;
+}
+
+#flipdown-title {
+  text-shadow: 5px 3px 4px rgb(36 36 36);
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .devfolio-button-iframe {
