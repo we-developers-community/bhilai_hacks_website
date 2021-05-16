@@ -210,7 +210,7 @@ const FlipDown = require("./flipdown");
     });
 
     // Unix timestamp (in seconds)
-    var endDate = 1621171800; //Unix timestamp for 2021-05-15 6 PM
+    var endDate = 1621175400; //Unix timestamp for 2021-05-15 8 PM
 
     // var endDate = 1621067460;
 
